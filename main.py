@@ -7,7 +7,6 @@ import json
 from bs4 import BeautifulSoup
 import requests
 from flask_cors import CORS
-import lxml
 from pytube import YouTube
 
 app = Flask(__name__)
@@ -47,7 +46,7 @@ bucket = storage.bucket()
 @app.route("/getMusic/<name>")
 def music(name):
     txt = requests.get("https://www.youtube.com/results?search_query=" + name).text
-    soup = BeautifulSoup(txt, "lxml")
+    soup = BeautifulSoup(txt, "html.parser")
 
     youtubedataobj = soup.find_all("script")[33].text.split("var ytInitialData = ")[1].split("};")[0] + "}"
     raw = (
