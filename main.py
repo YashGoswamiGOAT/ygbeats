@@ -3,6 +3,7 @@ import json
 from bs4 import BeautifulSoup
 import requests
 from flask_cors import CORS
+import lxml
 
 app = Flask(__name__)
 CORS(app)
