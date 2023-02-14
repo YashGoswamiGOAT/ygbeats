@@ -1,0 +1,9 @@
+﻿beautifulsoup4
+bs4
+firebase-admin
+flask
+Flask
+Flask-Cors
+pytube
+requests
+gunicorn
