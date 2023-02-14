@@ -1,9 +1,11 @@
-﻿beautifulsoup4
+beautifulsoup4
 bs4
 firebase-admin
 flask
 Flask
 Flask-Cors
+lxml
 pytube
 requests
+requests-html
 gunicorn
