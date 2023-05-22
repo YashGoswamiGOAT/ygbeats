@@ -10,3 +10,4 @@ pytube3
 pytube @ git+https://github.com/nficano/pytube
 requests
 requests-html
+gunicorn
